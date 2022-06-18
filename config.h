@@ -68,7 +68,7 @@ static const struct arg args[] = {
 	//{ datetime, "%s",           "%F %T" },
 	{ netspeed_rx, "| %sB/s | ", "enp0s31f6" },
 	{ disk_perc, "%s%% / | ", "/"}, 
-	{ run_command, "[VOL] %4s% | ", "pulsemixer --get-volume --id sink-1 | tail -c 4" },
+	{ run_command, "[VOL] %4s% | ", "pulsemixer --get-volume | tail -c 4" },
 	{ cpu_perc, "[CPU] %s%% | " },
 	{ ram_perc, "[RAM] %s%% | " },
 	{ datetime, "%s", "%F %l:%M"},
