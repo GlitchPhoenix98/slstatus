@@ -66,9 +66,9 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	//{ datetime, "%s",           "%F %T" },
-	{ netspeed_rx, "| %sB/s | ", "enp0s31f6" },
+	{ netspeed_tx, "| %sB/s | ", "enp0s31f6" },
 	{ disk_perc, "%s%% / | ", "/"}, 
-	{ run_command, "[VOL] %4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ run_command, "[VOL]%4s%% | ", "pamixer --get-volume" },
 	{ cpu_perc, "[CPU] %s%% | " },
 	{ ram_perc, "[RAM] %s%% | " },
 	{ datetime, "%s", "%F %l:%M %p"},
